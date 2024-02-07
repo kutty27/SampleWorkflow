@@ -1,9 +1,7 @@
 name: Sample Workflow
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch
 
 jobs:
   print-message:
