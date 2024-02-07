@@ -20,5 +20,6 @@ jobs:
 
     - name: Compile and Run Java program
       run: |
+        echo "This is reusable workflow for SampleWorkflow repository"
         javac *.java
         java Main
