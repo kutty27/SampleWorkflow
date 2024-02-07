@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Print echo messages
         run: |
-          echo: "This is workflow is called by the Build Workflow repository"
+          echo "This is workflow is called by the Build Workflow repository"
