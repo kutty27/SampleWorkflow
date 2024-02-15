@@ -1,0 +1,25 @@
+name: Dispatch Event
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'name'
+        required: true
+        type: string
+      environment:
+        description: 'target environment'
+        required: false
+        type: choice
+        default: 'development'
+        options:
+          - development
+          - staging
+          - production
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello, ${{ github.event.inputs.name }}! You are running on the ${{ github.event.inputs.environment }} environment."
