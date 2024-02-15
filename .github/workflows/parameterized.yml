@@ -18,7 +18,7 @@ on:
           - production
 
 jobs:
-  say-hello:
+  pass-parameter:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
